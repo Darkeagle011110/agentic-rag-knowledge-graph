@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  neo4j:
+    image: neo4j:5.18-community
+    container_name: agentic_rag_neo4j
+    restart: unless-stopped
+    ports:
+      - "7474:7474"   # Browser UI
+      - "7687:7687"   # Bolt connection
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-changeme}
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_dbms_security_procedures_unrestricted: "apoc.*"
+      NEO4J_server_memory_heap_initial__size: "512M"
+      NEO4J_server_memory_heap_max__size: "1G"
+      NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - ./backend/data:/var/lib/neo4j/import:ro   # CSV import dir
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: agentic_rag_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file: .env
+    environment:
+      NEO4J_URI: bolt://neo4j:7687
+    depends_on:
+      - neo4j
+    volumes:
+      - ./backend/data:/app/data:ro
+
+volumes:
+  neo4j_data:
+  neo4j_logs:

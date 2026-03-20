@@ -1,0 +1,6 @@
+supplier_id,supplier_name,country,lead_time_days,rating
+S001,Nordic Timber Co,Sweden,5,4.8
+S002,Baltic Metal Works,Latvia,7,4.5
+S003,EuroPlastic GmbH,Germany,10,4.2
+S004,ScandiWood AB,Finland,4,4.9
+S005,Riga Hardware Ltd,Latvia,8,4.3

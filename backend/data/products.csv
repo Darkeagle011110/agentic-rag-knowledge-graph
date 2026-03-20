@@ -1,0 +1,11 @@
+product_id,product_name,category,price,weight_kg
+P001,Gothenburg Table,Tables,249.99,18.5
+P002,Helsingborg Dresser,Storage,349.99,35.2
+P003,Jonkoping Coffee Table,Tables,149.99,12.3
+P004,Linkoping Bed,Beds,499.99,55.0
+P005,Malmo Desk,Desks,299.99,28.7
+P006,Norrkoping Nightstand,Storage,99.99,8.1
+P007,Orebro Lamp,Lighting,59.99,2.3
+P008,Stockholm Chair,Seating,189.99,9.4
+P009,Uppsala Sofa,Seating,799.99,78.0
+P010,Vasteras Bookshelf,Storage,219.99,42.0

@@ -1,0 +1,11 @@
+assembly_id,assembly_name,product_id,assembly_order
+A001,Table Top,P001,1
+A002,Table Legs,P001,2
+A003,Dresser Frame,P002,1
+A004,Dresser Drawers,P002,2
+A005,Coffee Table Top,P003,1
+A006,Coffee Table Frame,P003,2
+A007,Bed Frame,P004,1
+A008,Bed Slats,P004,2
+A009,Desk Surface,P005,1
+A010,Desk Frame,P005,2

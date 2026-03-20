@@ -1,0 +1,24 @@
+# Core framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+websockets>=12.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+
+# Google Agent Development Kit
+google-adk>=0.1.0
+
+# LLM & Embeddings
+openai>=1.35.0
+litellm>=1.40.0
+
+# Neo4j
+neo4j>=5.20.0
+neo4j-graphrag>=0.4.0
+
+# LangGraph (for the separate agentic-RAG example)
+langgraph>=0.2.0
+langchain-openai>=0.1.0
+langchain-community>=0.2.0
+faiss-cpu>=1.8.0
+langchain>=0.2.0

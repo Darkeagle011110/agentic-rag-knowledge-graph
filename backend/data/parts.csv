@@ -1,0 +1,11 @@
+part_id,part_name,material,unit_cost
+PT001,Solid Oak Plank,Wood,12.50
+PT002,Steel Bolt M8,Metal,0.15
+PT003,Plastic Foot Cap,Plastic,0.45
+PT004,MDF Board,Wood,5.20
+PT005,Drawer Slide Left,Metal,3.80
+PT006,Drawer Slide Right,Metal,3.80
+PT007,Birch Veneer Sheet,Wood,8.90
+PT008,Hex Nut M8,Metal,0.10
+PT009,Corner Bracket,Metal,1.20
+PT010,Wooden Dowel,Wood,0.30
